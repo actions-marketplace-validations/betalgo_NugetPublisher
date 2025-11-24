@@ -1,4 +1,12 @@
+![Betalgo NuGet Publisher Banner](.github/assets/banner.png)
+
 # Betalgo NuGet Publisher
+
+[![CI](https://github.com/Betalgo/NugetPublisher/actions/workflows/ci.yml/badge.svg)](https://github.com/Betalgo/NugetPublisher/actions/workflows/ci.yml)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Betalgo/NugetPublisher)](https://github.com/Betalgo/NugetPublisher/releases)
+[![License](https://img.shields.io/github/license/Betalgo/NugetPublisher)](LICENSE)
+
+> **Stop writing complex PowerShell scripts for CI/CD.** Publish your NuGet packages with version auto-discovery, deterministic builds, and multi-feed support in seconds.
 
 Composite GitHub Action that publishes .NET packages to NuGet.org (and optionally GitHub Packages) using a dedicated .NET console application executed through `dotnet run`. The action performs version discovery, deterministic packing, feed pushes, and optional git tagging without requiring PowerShell.
 

@@ -14,11 +14,13 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
-          include-prerelease: true
+
       - name: Restore
-        run: dotnet restore src/NugetPublisher/NugetPublisher.csproj
+        run: dotnet restore NugetPublisher/NugetPublisher.csproj
       - name: Build
-        run: dotnet build src/NugetPublisher/NugetPublisher.csproj -c Release --no-restore
+        run: dotnet build NugetPublisher/NugetPublisher.csproj -c Release --no-restore
+      - name: Test
+        run: dotnet test NugetPublisher.Tests/NugetPublisher.Tests.csproj -c Release --no-build --verbosity normal
 
 
 

@@ -1,5 +1,7 @@
 <Solution>
   <Folder Name="/Docs/">
+    <File Path=".github/workflows/ci.yml" />
+    <File Path=".github/workflows/release.yml" />
     <File Path="action.yml" />
     <File Path="README.md" />
   </Folder>
